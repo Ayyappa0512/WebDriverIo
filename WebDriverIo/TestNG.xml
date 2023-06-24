@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="default" >
+	<listeners>
+		<listener class-name="utils.Listerners"/>
+	</listeners>
+	<test name ="Default" preserve-order="true">
+		<parameter name="browser" value ="firefox"/>	
+<!-- 			<groups> -->
+<!-- 				<run> -->
+<!-- 					<include name="regression"/> -->
+<!-- 				</run> -->
+<!-- 			</groups> -->
+		<classes >
+			<class name="basics.Com1_StatusofWebElement"/>
+			<class name="basics.Com2_GetTextvsGetAttributevalue"/>
+			<class name="basics.Com3_DropDown"/>
+			<class name="basics.Com4_BootstrapsDropDown"/>
+			<class name="basics.Com5_JqurreyDropDown"/>
+			<class name="basics.Com6_CheckingDropdownSorted"/>
+			<class name="basics.Com7_AutocompleteDropdown"/>
+			<class name="basics.Com8_Autocompletedropdown2"/>
+			<class name="basics.Com9_CheckBox"/>
+			<class name="advance.Com10_brokenlinks"/>
+			<class name="advance.Com11_WebTable"/>
+			<class name="advance.Com12_Dynamic_webtable"/>
+		</classes>
+	</test>
+</suite>
